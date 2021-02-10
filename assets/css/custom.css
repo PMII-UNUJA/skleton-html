@@ -260,3 +260,125 @@
     font-size: 1.7rem;
     font-style: italic;
 }
+
+.text-biru {
+    color: #044c99;
+}
+
+.section-header h3 {
+    font-size: 25px;
+    color: #044c99;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: rgb(255, 225, 0);
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.no_padding {
+    padding: 0;
+}
+
+.ltr_butiran_kata {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.ltr_butiran_kata .judul_konten {
+    color: #054b07;
+    /* font-size: 29px; */
+}
+
+.ltr_butiran_kata .judul_konten2 {
+    color: #2E6DA4;
+}
+
+.ltr_butiran_kata h5 {
+    margin-bottom: 0;
+    color: green;
+}
+
+.ltr_butiran_kata small {
+    padding-bottom: 10px;
+}
+
+.ltr_butiran_kata .fa {
+    font-size: 47px;
+}
+
+.ltr_butiran_kata .ar {
+    margin-bottom: 0;
+    color: #044c99;
+}
+
+
+.garis {
+    float: left;
+    height: 2px;
+    margin-bottom: 15px;
+}
+
+.garis1 {
+    width: 10%;
+    background-color: orange
+}
+
+.garis2 {
+    width: 90%;
+    background-color: #E6E6E6;
+}
+
+.garis3 {
+    width: 10%;
+    background-color: #f7a580;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .judul_konten {
+        margin-top: 0;
+    }
+
+    .ltr_butiran_kata .judul_konten_mr {
+        margin-top: 20px
+    }
+
+    .garis1,
+    .garis3 {
+        width: 30%;
+    }
+
+    .garis2 {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .ltr_butiran_kata .judul_konten_mr {
+        margin-top: 20px
+    }
+}
